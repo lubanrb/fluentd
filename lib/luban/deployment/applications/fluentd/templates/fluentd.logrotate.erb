@@ -1,0 +1,14 @@
+# Fluentd logrotate configuration
+
+<%= log_path.join('*.log') %> {
+  daily
+  missingok
+  rotate 14
+  compress
+  dateext
+  notifempty
+  sharedscripts
+  postrotate
+    [ ! -f <%= pid_file_path %> ] || kill -USR1 $(cat <%= pid_file_path %>) 2>/dev/null || true
+  endscript
+}
