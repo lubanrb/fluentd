@@ -1,6 +1,6 @@
 # Change log
 
-## Version 0.1.1 (Aug 29, 2016)
+## Version 0.1.1 (Aug 30, 2016)
 
 Minor enhancements: 
   * Added 5 seconds delay in Monit config after fluentd start command is executed to avoid race condition between Monit and start command
