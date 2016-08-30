@@ -1,5 +1,10 @@
 # Change log
 
+## Version 0.1.2 (Aug 31, 2016)
+
+Minor enhancements:
+  * Used fluentd as suffix in the service entry for the sake of clarity
+
 ## Version 0.1.1 (Aug 30, 2016)
 
 Minor enhancements: 
