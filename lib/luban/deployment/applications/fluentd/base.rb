@@ -2,6 +2,24 @@ module Luban
   module Deployment
     module Applications
       class Fluentd < Luban::Deployment::Application
+        module Paths
+          def pid_file_name
+            @pid_file_name ||= "fluentd.pid"
+          end
+
+          def control_file_name
+            @control_file_name ||= "fluentd.conf"
+          end
+
+          def logrotate_file_name
+            @logrotate_file_name ||= "fluentd.logrotate"
+          end
+
+          def log_file_name
+            @log_file_name ||= "fluentd.log"
+          end
+        end
+        
         module Parameters
           extend Luban::Deployment::Parameters::Base
 

@@ -3,6 +3,7 @@ module Luban
     module Applications
       class Fluentd
         class Configurator < Luban::Deployment::Application::Configurator
+          include Paths
           include Parameters
           include Controller::Commands
 

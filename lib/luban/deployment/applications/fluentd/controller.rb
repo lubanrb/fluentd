@@ -25,6 +25,7 @@ module Luban
             end
           end
 
+          include Paths
           include Parameters
           include Commands
         end
