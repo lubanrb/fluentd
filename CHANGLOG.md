@@ -1,5 +1,11 @@
 # Change log
 
+## Version 0.1.3 (Sept 04, 2016)
+
+Minor enhancements:
+  * Setup #profile_name properly
+  * Bump up gem dependency of Luban to version 0.7.13
+
 ## Version 0.1.2 (Aug 31, 2016)
 
 Minor enhancements:
