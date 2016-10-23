@@ -4,7 +4,6 @@ module Luban
       class Fluentd
         class Configurator < Luban::Deployment::Application::Configurator
           include Paths
-          include Parameters
           include Controller::Commands
 
           def default_source_template_path

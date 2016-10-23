@@ -22,28 +22,13 @@ module Luban
           end
         end
         
-        module Parameters
-          extend Luban::Deployment::Parameters::Base
-
-          DefaultPort = 24224
-          parameter :port
-
-          protected
-
-          def set_default_fluentd_parameters
-            set_default :port, DefaultPort
-          end
-        end
-
-        include Parameters
+        DefaultPort = 24224
+        DefaultNetworkHost = "0.0.0.0"
+          
+        parameter :port, default: DefaultPort
+        parameter :network_host, default: DefaultNetworkHost
 
         protected
-
-        def set_default_application_parameters
-          super
-          set_default_source
-          set_default_fluentd_parameters
-        end
 
         def include_default_templates_path
           super
