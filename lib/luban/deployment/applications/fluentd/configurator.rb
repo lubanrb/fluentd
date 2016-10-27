@@ -5,11 +5,6 @@ module Luban
         class Configurator < Luban::Deployment::Application::Configurator
           include Paths
           include Controller::Commands
-
-          def default_source_template_path
-            @default_source_template_path ||= 
-              Pathname.new(__FILE__).dirname.join('templates', 'app')
-          end
         end
       end
     end

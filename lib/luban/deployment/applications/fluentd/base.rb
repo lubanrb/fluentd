@@ -28,11 +28,17 @@ module Luban
         parameter :port, default: DefaultPort
         parameter :network_host, default: DefaultNetworkHost
 
+        def base_templates_path; super(__FILE__); end
+
+        def default_source_template_path
+          @default_source_template_path ||= base_templates_path.join('app')
+        end
+
         protected
 
         def include_default_templates_path
           super
-          default_templates_paths.unshift(base_templates_path(__FILE__))
+          default_templates_paths.unshift(base_templates_path)
         end
       end
     end
