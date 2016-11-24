@@ -1,11 +1,12 @@
 # Change log
 
-## Version 0.1.9 (Nov 24, 2016)
+## Version 0.1.10 (Nov 24, 2016)
 
 Minor enhancements:
   * Made use of linked_files convention
     * Relocated fluentd config templates to templates/profile
-    * As a result, bump up gem dependency of Luban to version 0.10.4
+  * Changed profile name from 'fluentd' back to 'app' in order to be persistent to the app convention
+    * As a result, bump up gem dependency of Luban to version 0.10.5
 
 ## Version 0.1.8 (Oct 27, 2016)
 
