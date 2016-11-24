@@ -38,7 +38,7 @@ module Luban
 
         def include_default_templates_path
           super
-          default_templates_paths.unshift(base_templates_path)
+          default_templates_paths.unshift(base_templates_path.join('profile'))
         end
       end
     end
