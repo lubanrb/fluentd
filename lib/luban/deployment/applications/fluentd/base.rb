@@ -3,8 +3,6 @@ module Luban
     module Applications
       class Fluentd < Luban::Deployment::Application
         module Paths
-          def profile_name; 'fluentd'; end
-
           def pid_file_name
             @pid_file_name ||= "fluentd.pid"
           end
