@@ -1,9 +1,7 @@
 module Luban
   module Deployment
     module Applications
-      class Fluentd
-        VERSION = '0.1.10'
-      end
+      FLUENTD_VERSION = '0.1.10'
     end
   end
 end

@@ -5,7 +5,7 @@ require 'luban/deployment/applications/fluentd/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "luban-fluentd"
-  spec.version       = Luban::Deployment::Applications::Fluentd::VERSION
+  spec.version       = Luban::Deployment::Applications::FLUENTD_VERSION
   spec.authors       = ["Rubyist Chi"]
   spec.email         = ["rubyist.chi@gmail.com"]
 
